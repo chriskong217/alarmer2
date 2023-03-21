@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D5174B729CA18AA00DECBFD /* AddAlarmButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5174B629CA18AA00DECBFD /* AddAlarmButtonView.swift */; };
 		8DC3B5BF29C649D400262C6D /* Alarmer_V2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3B5BE29C649D400262C6D /* Alarmer_V2App.swift */; };
 		8DC3B5C129C649D400262C6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3B5C029C649D400262C6D /* ContentView.swift */; };
 		8DC3B5C329C649D500262C6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DC3B5C229C649D500262C6D /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D5174B629CA18AA00DECBFD /* AddAlarmButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmButtonView.swift; sourceTree = "<group>"; };
 		8DC3B5BB29C649D400262C6D /* Alarmer V2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alarmer V2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC3B5BE29C649D400262C6D /* Alarmer_V2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarmer_V2App.swift; sourceTree = "<group>"; };
 		8DC3B5C029C649D400262C6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,11 +41,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D5174B529CA188F00DECBFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D5174B629CA18AA00DECBFD /* AddAlarmButtonView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8DC3B5B229C649D400262C6D = {
 			isa = PBXGroup;
 			children = (
-				8DC7D42529C900FD00CC1AE8 /* devChris Test file.swift */,
-				8DC7D42329C8FFC800CC1AE8 /* Test file.swift */,
 				8DC3B5BD29C649D400262C6D /* Alarmer V2 */,
 				8DC3B5BC29C649D400262C6D /* Products */,
 			);
@@ -61,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				8DC3B5BE29C649D400262C6D /* Alarmer_V2App.swift */,
+				8D5174B529CA188F00DECBFD /* View */,
 				8DC3B5C029C649D400262C6D /* ContentView.swift */,
 				BBD91C1629C95483008977AB /* New Group */,
 				8DC3B5C229C649D500262C6D /* Assets.xcassets */,
@@ -156,11 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DC7D42429C8FFC800CC1AE8 /* Test file.swift in Sources */,
 				8DC3B5C129C649D400262C6D /* ContentView.swift in Sources */,
 				BBD91C1829C95555008977AB /* AddAlarmViewController.swift in Sources */,
 				8DC3B5BF29C649D400262C6D /* Alarmer_V2App.swift in Sources */,
-				8DC7D42629C900FD00CC1AE8 /* devChris Test file.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
