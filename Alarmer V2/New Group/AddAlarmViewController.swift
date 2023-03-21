@@ -99,7 +99,8 @@ struct RepeatAlarmView: View {
             }
         }
         .navigationTitle("Repeat")
-        .navigationBarTitleDisplayMode(.inline)
+                .modifier(NavigationBarTitleDisplayModeModifier(.inline))
+
     }
 }
 
@@ -112,7 +113,7 @@ struct AlarmLabelView: View {
             TextField("Label", text: $note)
         }
         .navigationTitle("Label")
-        .navigationBarTitleDisplayMode(.inline) // i think this can just be removed
+                .modifier(NavigationBarTitleDisplayModeModifier(.inline))
     }
 }
 
@@ -125,7 +126,7 @@ struct AlarmInfo {
 
 enum Day: String, CaseIterable {
     case sunday, monday, tuesday, wednesday, thursday, friday, saturday
-    
+
     var shortName: String {
         switch self {
         case .sunday: return "Sun"
@@ -137,6 +138,17 @@ enum Day: String, CaseIterable {
         case .saturday: return "Sat"
         }
     }
-    
-    
+
+    var longName: String {
+        switch self {
+        case .sunday: return "Sunday"
+        case .monday: return "Monday"
+        case .tuesday: return "Tuesday"
+        case .wednesday: return "Wednesday"
+        case .thursday: return "Thursday"
+        case .friday: return "Friday"
+        case .saturday: return "Saturday"
+        }
+    }
 }
+
