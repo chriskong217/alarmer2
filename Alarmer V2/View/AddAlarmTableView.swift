@@ -2,8 +2,6 @@ import SwiftUI
 
 Add alarm table view:
 
-import SwiftUI
-
 struct AddAlarmTableViewCell: View {
    
     static let identifier = "AddAlarmTableViewCell"
