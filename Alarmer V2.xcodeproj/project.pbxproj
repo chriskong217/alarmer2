@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D5174B729CA18AA00DECBFD /* AddAlarmButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5174B629CA18AA00DECBFD /* AddAlarmButtonView.swift */; };
 		8DC3B5BF29C649D400262C6D /* Alarmer_V2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3B5BE29C649D400262C6D /* Alarmer_V2App.swift */; };
 		8DC3B5C129C649D400262C6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3B5C029C649D400262C6D /* ContentView.swift */; };
 		8DC3B5C329C649D500262C6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DC3B5C229C649D500262C6D /* Assets.xcassets */; };
 		8DC3B5C729C649D500262C6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DC3B5C629C649D500262C6D /* Preview Assets.xcassets */; };
-		8DC7D42429C8FFC800CC1AE8 /* Test file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC7D42329C8FFC800CC1AE8 /* Test file.swift */; };
-		8DC7D42629C900FD00CC1AE8 /* devChris Test file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC7D42529C900FD00CC1AE8 /* devChris Test file.swift */; };
+		BB83C1EB29CBB859006FA71A /* AddAlarmTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83C1EA29CBB859006FA71A /* AddAlarmTableView.swift */; };
+		BB83C1ED29CBB8AE006FA71A /* AlarmHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83C1EC29CBB8AE006FA71A /* AlarmHeaderView.swift */; };
 		BBD91C1829C95555008977AB /* AddAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD91C1729C95555008977AB /* AddAlarmViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,8 +24,8 @@
 		8DC3B5C229C649D500262C6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DC3B5C429C649D500262C6D /* Alarmer_V2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Alarmer_V2.entitlements; sourceTree = "<group>"; };
 		8DC3B5C629C649D500262C6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8DC7D42329C8FFC800CC1AE8 /* Test file.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test file.swift"; sourceTree = "<group>"; };
-		8DC7D42529C900FD00CC1AE8 /* devChris Test file.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "devChris Test file.swift"; sourceTree = "<group>"; };
+		BB83C1EA29CBB859006FA71A /* AddAlarmTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmTableView.swift; sourceTree = "<group>"; };
+		BB83C1EC29CBB8AE006FA71A /* AlarmHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmHeaderView.swift; sourceTree = "<group>"; };
 		BBD91C1729C95555008977AB /* AddAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,6 +44,8 @@
 			isa = PBXGroup;
 			children = (
 				8D5174B629CA18AA00DECBFD /* AddAlarmButtonView.swift */,
+				BB83C1EA29CBB859006FA71A /* AddAlarmTableView.swift */,
+				BB83C1EC29CBB8AE006FA71A /* AlarmHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +169,8 @@
 				8DC3B5C129C649D400262C6D /* ContentView.swift in Sources */,
 				BBD91C1829C95555008977AB /* AddAlarmViewController.swift in Sources */,
 				8DC3B5BF29C649D400262C6D /* Alarmer_V2App.swift in Sources */,
+				BB83C1EB29CBB859006FA71A /* AddAlarmTableView.swift in Sources */,
+				BB83C1ED29CBB8AE006FA71A /* AlarmHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
