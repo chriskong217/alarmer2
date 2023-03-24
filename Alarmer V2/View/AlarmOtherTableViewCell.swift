@@ -20,3 +20,10 @@ struct AlarmOtherTableViewCell: View {
         .background(Color.clear)
     }
 }
+
+struct AlarmOtherTableViewCell_Previews: PreviewProvider {
+    static var previews: some View {
+        AlarmHeaderView()
+
+    }
+}
