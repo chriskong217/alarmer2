@@ -7,13 +7,21 @@
 
 import Foundation
 
-struct AlarmInfo: Identifiable {
-    let id = UUID()
+class AlarmInfo: Identifiable {
+    let id: UUID
     var date: Date
     var noteLabel: String
     var isOn: Bool
+    var selectDays: Set<Day> // Add selectDays property
+    
+    init(id: UUID = UUID(), date: Date, noteLabel: String, isOn: Bool, selectDays: Set<Day> = []) {
+        self.id = id
+        self.date = date
+        self.noteLabel = noteLabel
+        self.isOn = isOn
+        self.selectDays = selectDays // Set selectDays in the initializer
+    }
 }
-
 extension Date {
     func toString(format: String) -> String {
         let formatter = DateFormatter()
@@ -23,3 +31,4 @@ extension Date {
 }
 
 //This file Contains the AlarmInfo structure and a Date extension.
+
