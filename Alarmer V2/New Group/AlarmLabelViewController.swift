@@ -40,4 +40,5 @@ struct AlarmLabelViewController: View {
     }
 }
 
+
 //This file defines a view for setting and updating the label of an alarm in the app. The view contains a text field for user input and communicates with the main alarm view to update the label when necessary.
