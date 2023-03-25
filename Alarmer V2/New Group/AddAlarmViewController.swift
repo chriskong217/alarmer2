@@ -14,7 +14,7 @@ protocol SaveAlarmInfoDelegate: AnyObject {
 
 struct AddAlarmView: View {
     
-    @State private var alarm = AlarmInfo()
+    @State private var alarm = AlarmInfo(date: Date(), noteLabel: "", isOn: true)
     @State private var tempIndexRow = 0
     @State private var selectDays: Set<Day> = []
     @State private var note = ""
@@ -75,35 +75,6 @@ struct AddAlarmView: View {
     }
 }
 
-struct RepeatAlarmView: View {
-    
-    @Binding var selectDays: Set<Day>
-    
-    var body: some View {
-        List {
-            ForEach(Day.allCases, id: \.self) { day in // no idea what this is
-                HStack {
-                    Text(day.longName) // no idea what this is
-                    Spacer()
-                    if selectDays.contains(day) {
-                        Image(systemName: "checkmark")
-                    }
-                }
-                .onTapGesture {
-                    if selectDays.contains(day) {
-                        selectDays.remove(day)
-                    } else {
-                        selectDays.insert(day)
-                    }
-                }
-            }
-        }
-        .navigationTitle("Repeat")
-                .modifier(NavigationBarTitleDisplayModeModifier(.inline))
-
-    }
-}
-
 struct AlarmLabelView: View {
     
     @Binding var note: String
@@ -115,13 +86,6 @@ struct AlarmLabelView: View {
         .navigationTitle("Label")
                 .modifier(NavigationBarTitleDisplayModeModifier(.inline))
     }
-}
-
-struct AlarmInfo {
-    var date = Date()
-    var selectDays = Set<Day>()
-    var note = ""
-    var snooze = false
 }
 
 enum Day: String, CaseIterable {
@@ -151,4 +115,3 @@ enum Day: String, CaseIterable {
         }
     }
 }
-
