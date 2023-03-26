@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37402F8729CF7BAD00A18D1C /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 37402F8629CF7BAD00A18D1C /* Preview Content */; };
 		37402F8E29CF7C9200A18D1C /* StopWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37402F8D29CF7C9200A18D1C /* StopWatchViewController.swift */; };
 		37402F9029CF7FDF00A18D1C /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37402F8F29CF7FDF00A18D1C /* TimerViewController.swift */; };
 		37402F9229CF815300A18D1C /* WorldClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37402F9129CF815300A18D1C /* WorldClockViewController.swift */; };
@@ -24,6 +23,7 @@
 		8D77CF4829CFD02300D07F23 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF4229CFD02300D07F23 /* AlarmViewController.swift */; };
 		8D77CF4B29CFD03B00D07F23 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF4929CFD03B00D07F23 /* Notification.swift */; };
 		8D77CF4C29CFD03B00D07F23 /* DateExtension.Swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF4A29CFD03B00D07F23 /* DateExtension.Swift */; };
+		8D77CF6029CFDC3600D07F23 /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 8D77CF5F29CFDC3600D07F23 /* Preview Content */; };
 		8DC3B5BF29C649D400262C6D /* Alarmer_V2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3B5BE29C649D400262C6D /* Alarmer_V2App.swift */; };
 		8DC3B5C129C649D400262C6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3B5C029C649D400262C6D /* ContentView.swift */; };
 		8DC3B5C329C649D500262C6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DC3B5C229C649D500262C6D /* Assets.xcassets */; };
@@ -31,7 +31,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		37402F8629CF7BAD00A18D1C /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Preview Content"; path = "../../../.Trash/Preview Content"; sourceTree = "<group>"; };
 		37402F8D29CF7C9200A18D1C /* StopWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchViewController.swift; sourceTree = "<group>"; };
 		37402F8F29CF7FDF00A18D1C /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		37402F9129CF815300A18D1C /* WorldClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		8D77CF4229CFD02300D07F23 /* AlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		8D77CF4929CFD03B00D07F23 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		8D77CF4A29CFD03B00D07F23 /* DateExtension.Swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.Swift; sourceTree = "<group>"; };
+		8D77CF5F29CFDC3600D07F23 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
 		8DC3B5BB29C649D400262C6D /* Alarmer V2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alarmer V2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC3B5BE29C649D400262C6D /* Alarmer_V2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarmer_V2App.swift; sourceTree = "<group>"; };
 		8DC3B5C029C649D400262C6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 				BBD91C1629C95483008977AB /* Controller */,
 				8DC3B5C229C649D500262C6D /* Assets.xcassets */,
 				8DC3B5C429C649D500262C6D /* Alarmer_V2.entitlements */,
-				37402F8629CF7BAD00A18D1C /* Preview Content */,
+				8D77CF5F29CFDC3600D07F23 /* Preview Content */,
 			);
 			path = "Alarmer V2";
 			sourceTree = "<group>";
@@ -220,7 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37402F8729CF7BAD00A18D1C /* Preview Content in Resources */,
+				8D77CF6029CFDC3600D07F23 /* Preview Content in Resources */,
 				8DC3B5C329C649D500262C6D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
