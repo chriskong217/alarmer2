@@ -24,6 +24,14 @@
 		8D77CF4B29CFD03B00D07F23 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF4929CFD03B00D07F23 /* Notification.swift */; };
 		8D77CF4C29CFD03B00D07F23 /* DateExtension.Swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF4A29CFD03B00D07F23 /* DateExtension.Swift */; };
 		8D77CF6029CFDC3600D07F23 /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 8D77CF5F29CFDC3600D07F23 /* Preview Content */; };
+		8D77CF6629CFE2C600D07F23 /* AlarmInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF6529CFE2C600D07F23 /* AlarmInfo.swift */; };
+		8D77CF6829CFE2F200D07F23 /* AlarmStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF6729CFE2F200D07F23 /* AlarmStore.swift */; };
+		8D77CF6A29CFE31500D07F23 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF6929CFE31500D07F23 /* Day.swift */; };
+		8D77CF6D29CFE50400D07F23 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF6C29CFE50400D07F23 /* MainTabView.swift */; };
+		8D77CF6F29CFE53800D07F23 /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF6E29CFE53800D07F23 /* AlarmView.swift */; };
+		8D77CF7129CFE62700D07F23 /* WorldClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF7029CFE62700D07F23 /* WorldClockView.swift */; };
+		8D77CF7329CFE64400D07F23 /* StopWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF7229CFE64400D07F23 /* StopWatchView.swift */; };
+		8D77CF7529CFE66100D07F23 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF7429CFE66100D07F23 /* TimerView.swift */; };
 		8DC3B5BF29C649D400262C6D /* Alarmer_V2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3B5BE29C649D400262C6D /* Alarmer_V2App.swift */; };
 		8DC3B5C129C649D400262C6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3B5C029C649D400262C6D /* ContentView.swift */; };
 		8DC3B5C329C649D500262C6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DC3B5C229C649D500262C6D /* Assets.xcassets */; };
@@ -49,6 +57,14 @@
 		8D77CF4929CFD03B00D07F23 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		8D77CF4A29CFD03B00D07F23 /* DateExtension.Swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.Swift; sourceTree = "<group>"; };
 		8D77CF5F29CFDC3600D07F23 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
+		8D77CF6529CFE2C600D07F23 /* AlarmInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmInfo.swift; sourceTree = "<group>"; };
+		8D77CF6729CFE2F200D07F23 /* AlarmStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmStore.swift; sourceTree = "<group>"; };
+		8D77CF6929CFE31500D07F23 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		8D77CF6C29CFE50400D07F23 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		8D77CF6E29CFE53800D07F23 /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
+		8D77CF7029CFE62700D07F23 /* WorldClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockView.swift; sourceTree = "<group>"; };
+		8D77CF7229CFE64400D07F23 /* StopWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchView.swift; sourceTree = "<group>"; };
+		8D77CF7429CFE66100D07F23 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		8DC3B5BB29C649D400262C6D /* Alarmer V2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alarmer V2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC3B5BE29C649D400262C6D /* Alarmer_V2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarmer_V2App.swift; sourceTree = "<group>"; };
 		8DC3B5C029C649D400262C6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +130,30 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		8D77CF6429CFE2AD00D07F23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D77CF6529CFE2C600D07F23 /* AlarmInfo.swift */,
+				8D77CF6729CFE2F200D07F23 /* AlarmStore.swift */,
+				8D77CF6929CFE31500D07F23 /* Day.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8D77CF6B29CFE38B00D07F23 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				8D77CF4029CFD02300D07F23 /* AlarmInfo.swift */,
+				8D77CF4129CFD02300D07F23 /* AlarmLabelViewController.swift */,
+				8D77CF3F29CFD02300D07F23 /* AlarmStore.swift */,
+				8D77CF4229CFD02300D07F23 /* AlarmViewController.swift */,
+				8D77CF3E29CFD02300D07F23 /* RepeatAlarmViewController.Swift */,
+				8D77CF3D29CFD02300D07F23 /* SoundsViewController.Swift */,
+				BBD91C1729C95555008977AB /* AddAlarmViewController.swift */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
 		8DC3B5B229C649D400262C6D = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +173,7 @@
 		8DC3B5BD29C649D400262C6D /* Alarmer V2 */ = {
 			isa = PBXGroup;
 			children = (
+				8D77CF6429CFE2AD00D07F23 /* Model */,
 				37402F8829CF7BBC00A18D1C /* Tabber */,
 				8D77CF4E29CFD05600D07F23 /* Helper */,
 				37FE44FB29CFD53D001BA6EF /* SebTesting */,
@@ -151,13 +192,12 @@
 		BBD91C1629C95483008977AB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8D77CF4029CFD02300D07F23 /* AlarmInfo.swift */,
-				8D77CF4129CFD02300D07F23 /* AlarmLabelViewController.swift */,
-				8D77CF3F29CFD02300D07F23 /* AlarmStore.swift */,
-				8D77CF4229CFD02300D07F23 /* AlarmViewController.swift */,
-				8D77CF3E29CFD02300D07F23 /* RepeatAlarmViewController.Swift */,
-				8D77CF3D29CFD02300D07F23 /* SoundsViewController.Swift */,
-				BBD91C1729C95555008977AB /* AddAlarmViewController.swift */,
+				8D77CF6B29CFE38B00D07F23 /* Alarm */,
+				8D77CF6C29CFE50400D07F23 /* MainTabView.swift */,
+				8D77CF6E29CFE53800D07F23 /* AlarmView.swift */,
+				8D77CF7029CFE62700D07F23 /* WorldClockView.swift */,
+				8D77CF7229CFE64400D07F23 /* StopWatchView.swift */,
+				8D77CF7429CFE66100D07F23 /* TimerView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -235,18 +275,26 @@
 				8D77CF4829CFD02300D07F23 /* AlarmViewController.swift in Sources */,
 				37402F9229CF815300A18D1C /* WorldClockViewController.swift in Sources */,
 				37402F9029CF7FDF00A18D1C /* TimerViewController.swift in Sources */,
+				8D77CF6629CFE2C600D07F23 /* AlarmInfo.swift in Sources */,
+				8D77CF6A29CFE31500D07F23 /* Day.swift in Sources */,
 				37402F8E29CF7C9200A18D1C /* StopWatchViewController.swift in Sources */,
 				8D77CF4629CFD02300D07F23 /* AlarmInfo.swift in Sources */,
 				8D77CF3A29CFD00800D07F23 /* AddAlarmTableView.swift in Sources */,
 				8D77CF4329CFD02300D07F23 /* SoundsViewController.Swift in Sources */,
+				8D77CF7529CFE66100D07F23 /* TimerView.swift in Sources */,
+				8D77CF6D29CFE50400D07F23 /* MainTabView.swift in Sources */,
+				8D77CF6F29CFE53800D07F23 /* AlarmView.swift in Sources */,
 				8D77CF4C29CFD03B00D07F23 /* DateExtension.Swift in Sources */,
 				8DC3B5C129C649D400262C6D /* ContentView.swift in Sources */,
 				BBD91C1829C95555008977AB /* AddAlarmViewController.swift in Sources */,
+				8D77CF7329CFE64400D07F23 /* StopWatchView.swift in Sources */,
 				8D77CF4429CFD02300D07F23 /* RepeatAlarmViewController.Swift in Sources */,
 				8D77CF3C29CFD00800D07F23 /* WakeUpTableViewCell.swift in Sources */,
 				8D77CF4529CFD02300D07F23 /* AlarmStore.swift in Sources */,
 				8D77CF3B29CFD00800D07F23 /* AlarmHeaderView.swift in Sources */,
+				8D77CF6829CFE2F200D07F23 /* AlarmStore.swift in Sources */,
 				8D77CF3929CFD00800D07F23 /* AlarmOtherTableViewCell.swift in Sources */,
+				8D77CF7129CFE62700D07F23 /* WorldClockView.swift in Sources */,
 				37FE44FD29CFD558001BA6EF /* sebtesting.swift in Sources */,
 				8D77CF4729CFD02300D07F23 /* AlarmLabelViewController.swift in Sources */,
 				8DC3B5BF29C649D400262C6D /* Alarmer_V2App.swift in Sources */,

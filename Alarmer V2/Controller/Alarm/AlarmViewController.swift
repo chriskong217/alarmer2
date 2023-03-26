@@ -16,7 +16,7 @@ struct AlarmView: View {
         NavigationView {
             List {
                 Section(header: Text("Sleep | Wake Up")) {
-                    Text("沒有鬧鐘")
+                    Text("hello")
                         .frame(height: 100)
                 }
                 
