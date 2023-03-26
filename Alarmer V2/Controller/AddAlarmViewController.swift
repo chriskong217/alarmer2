@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import UserNotifications
 
 protocol SaveAlarmInfoDelegate: AnyObject {
     func saveAlarmInfo(alarmData: AlarmInfo, index: Int)
@@ -14,7 +14,7 @@ protocol SaveAlarmInfoDelegate: AnyObject {
 
 struct AddAlarmView: View {
     
-    @State private var alarm = AlarmInfo()
+    @State private var alarm = AlarmInfo(date: Date(), noteLabel: "", isOn: true)
     @State private var tempIndexRow = 0
     @State private var selectDays: Set<Day> = []
     @State private var note = ""
@@ -33,28 +33,22 @@ struct AddAlarmView: View {
                 .datePickerStyle(.wheel)
                 
                 List {
-                    Button(action: {
-                        let repeatVC = RepeatAlarmView(selectDays: selectDays)
-                        repeatVC.repeatDelegate = self
-                        self.navigationController?.pushViewController(repeatVC, animated: true)
-                    }) {
+                    NavigationLink(destination: RepeatAlarmView(selectDays: selectDays)) {
                         HStack {
                             Text("Repeat")
                             Spacer()
                             Text(alarm.selectDays.map(\.shortName).joined(separator: ", "))
                         }
                     }
-                    Button(action: {
-                        let labelVC = AlarmLabelView(note: note)
-                        labelVC.labelDelegate = self
-                        self.navigationController?.pushViewController(labelVC, animated: true)
-                    }) {
+                    
+                    NavigationLink(destination: AlarmLabelView(note: $note)) {
                         HStack {
                             Text("Label")
                             Spacer()
                             Text(note)
                         }
                     }
+                    
                     Toggle("Snooze", isOn: $snooze)
                 }
                 .listStyle(GroupedListStyle())
@@ -62,45 +56,16 @@ struct AddAlarmView: View {
                 .navigationBarTitleDisplayMode(.inline)
                 .navigationBarItems(
                     leading: Button("Cancel") {
-                        self.dismiss(animated: true)
+                        presentationMode.wrappedValue.dismiss()
                     },
                     trailing: Button("Save") {
-                        UserNotification.shared.addNotificationRequest(alarm: alarm) // do we need to add this somewhere so it is in scope?
+                        UserNotification.shared.addNotificationRequest(alarm: alarm)
                         saveAlarmDataDelegate?.saveAlarmInfo(alarmData: alarm, index: tempIndexRow)
-                        self.dismiss(animated: true)
+                        presentationMode.wrappedValue.dismiss()
                     }
                 )
             }
         }
-    }
-}
-
-struct RepeatAlarmView: View {
-    
-    @Binding var selectDays: Set<Day>
-    
-    var body: some View {
-        List {
-            ForEach(Day.allCases, id: \.self) { day in // no idea what this is
-                HStack {
-                    Text(day.longName) // no idea what this is
-                    Spacer()
-                    if selectDays.contains(day) {
-                        Image(systemName: "checkmark")
-                    }
-                }
-                .onTapGesture {
-                    if selectDays.contains(day) {
-                        selectDays.remove(day)
-                    } else {
-                        selectDays.insert(day)
-                    }
-                }
-            }
-        }
-        .navigationTitle("Repeat")
-                .modifier(NavigationBarTitleDisplayModeModifier(.inline))
-
     }
 }
 
@@ -115,13 +80,6 @@ struct AlarmLabelView: View {
         .navigationTitle("Label")
                 .modifier(NavigationBarTitleDisplayModeModifier(.inline))
     }
-}
-
-struct AlarmInfo {
-    var date = Date()
-    var selectDays = Set<Day>()
-    var note = ""
-    var snooze = false
 }
 
 enum Day: String, CaseIterable {
@@ -150,5 +108,16 @@ enum Day: String, CaseIterable {
         case .saturday: return "Saturday"
         }
     }
+    
+    var weekday: Int {
+        switch self {
+        case .sunday: return 1
+        case .monday: return 2
+        case .tuesday: return 3
+        case .wednesday: return 4
+        case .thursday: return 5
+        case .friday: return 6
+        case .saturday: return 7
+        }
+    }
 }
-
