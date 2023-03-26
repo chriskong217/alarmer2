@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import UserNotifications
 
 protocol SaveAlarmInfoDelegate: AnyObject {
     func saveAlarmInfo(alarmData: AlarmInfo, index: Int)
@@ -33,28 +33,22 @@ struct AddAlarmView: View {
                 .datePickerStyle(.wheel)
                 
                 List {
-                    Button(action: {
-                        let repeatVC = RepeatAlarmView(selectDays: selectDays)
-                        repeatVC.repeatDelegate = self
-                        self.navigationController?.pushViewController(repeatVC, animated: true)
-                    }) {
+                    NavigationLink(destination: RepeatAlarmView(selectDays: selectDays)) {
                         HStack {
                             Text("Repeat")
                             Spacer()
                             Text(alarm.selectDays.map(\.shortName).joined(separator: ", "))
                         }
                     }
-                    Button(action: {
-                        let labelVC = AlarmLabelView(note: note)
-                        labelVC.labelDelegate = self
-                        self.navigationController?.pushViewController(labelVC, animated: true)
-                    }) {
+                    
+                    NavigationLink(destination: AlarmLabelView(note: $note)) {
                         HStack {
                             Text("Label")
                             Spacer()
                             Text(note)
                         }
                     }
+                    
                     Toggle("Snooze", isOn: $snooze)
                 }
                 .listStyle(GroupedListStyle())
@@ -62,12 +56,12 @@ struct AddAlarmView: View {
                 .navigationBarTitleDisplayMode(.inline)
                 .navigationBarItems(
                     leading: Button("Cancel") {
-                        self.dismiss(animated: true)
+                        presentationMode.wrappedValue.dismiss()
                     },
                     trailing: Button("Save") {
-                        UserNotification.shared.addNotificationRequest(alarm: alarm) // do we need to add this somewhere so it is in scope?
+                        UserNotification.shared.addNotificationRequest(alarm: alarm)
                         saveAlarmDataDelegate?.saveAlarmInfo(alarmData: alarm, index: tempIndexRow)
-                        self.dismiss(animated: true)
+                        presentationMode.wrappedValue.dismiss()
                     }
                 )
             }
@@ -112,6 +106,18 @@ enum Day: String, CaseIterable {
         case .thursday: return "Thursday"
         case .friday: return "Friday"
         case .saturday: return "Saturday"
+        }
+    }
+    
+    var weekday: Int {
+        switch self {
+        case .sunday: return 1
+        case .monday: return 2
+        case .tuesday: return 3
+        case .wednesday: return 4
+        case .thursday: return 5
+        case .friday: return 6
+        case .saturday: return 7
         }
     }
 }
