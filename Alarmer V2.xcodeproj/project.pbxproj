@@ -11,6 +11,7 @@
 		37402F8E29CF7C9200A18D1C /* StopWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37402F8D29CF7C9200A18D1C /* StopWatchViewController.swift */; };
 		37402F9029CF7FDF00A18D1C /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37402F8F29CF7FDF00A18D1C /* TimerViewController.swift */; };
 		37402F9229CF815300A18D1C /* WorldClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37402F9129CF815300A18D1C /* WorldClockViewController.swift */; };
+		37FE44FD29CFD558001BA6EF /* sebtesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FE44FC29CFD558001BA6EF /* sebtesting.swift */; };
 		8D77CF3929CFD00800D07F23 /* AlarmOtherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF3529CFD00800D07F23 /* AlarmOtherTableViewCell.swift */; };
 		8D77CF3A29CFD00800D07F23 /* AddAlarmTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF3629CFD00800D07F23 /* AddAlarmTableView.swift */; };
 		8D77CF3B29CFD00800D07F23 /* AlarmHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF3729CFD00800D07F23 /* AlarmHeaderView.swift */; };
@@ -34,6 +35,7 @@
 		37402F8D29CF7C9200A18D1C /* StopWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchViewController.swift; sourceTree = "<group>"; };
 		37402F8F29CF7FDF00A18D1C /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		37402F9129CF815300A18D1C /* WorldClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockViewController.swift; sourceTree = "<group>"; };
+		37FE44FC29CFD558001BA6EF /* sebtesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sebtesting.swift; sourceTree = "<group>"; };
 		8D5174B629CA18AA00DECBFD /* AddAlarmButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmButtonView.swift; sourceTree = "<group>"; };
 		8D77CF3529CFD00800D07F23 /* AlarmOtherTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmOtherTableViewCell.swift; sourceTree = "<group>"; };
 		8D77CF3629CFD00800D07F23 /* AddAlarmTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAlarmTableView.swift; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 				37402F9129CF815300A18D1C /* WorldClockViewController.swift */,
 			);
 			path = Tabber;
+			sourceTree = "<group>";
+		};
+		37FE44FB29CFD53D001BA6EF /* SebTesting */ = {
+			isa = PBXGroup;
+			children = (
+				37FE44FC29CFD558001BA6EF /* sebtesting.swift */,
+			);
+			path = SebTesting;
 			sourceTree = "<group>";
 		};
 		8D5174B529CA188F00DECBFD /* View */ = {
@@ -125,6 +135,7 @@
 			children = (
 				37402F8829CF7BBC00A18D1C /* Tabber */,
 				8D77CF4E29CFD05600D07F23 /* Helper */,
+				37FE44FB29CFD53D001BA6EF /* SebTesting */,
 				8D77CF4D29CFD04500D07F23 /* Extension */,
 				8DC3B5BE29C649D400262C6D /* Alarmer_V2App.swift */,
 				8D5174B529CA188F00DECBFD /* View */,
@@ -236,6 +247,7 @@
 				8D77CF4529CFD02300D07F23 /* AlarmStore.swift in Sources */,
 				8D77CF3B29CFD00800D07F23 /* AlarmHeaderView.swift in Sources */,
 				8D77CF3929CFD00800D07F23 /* AlarmOtherTableViewCell.swift in Sources */,
+				37FE44FD29CFD558001BA6EF /* sebtesting.swift in Sources */,
 				8D77CF4729CFD02300D07F23 /* AlarmLabelViewController.swift in Sources */,
 				8DC3B5BF29C649D400262C6D /* Alarmer_V2App.swift in Sources */,
 				8D77CF4B29CFD03B00D07F23 /* Notification.swift in Sources */,
