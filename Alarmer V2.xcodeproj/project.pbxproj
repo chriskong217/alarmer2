@@ -8,27 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		37402F8729CF7BAD00A18D1C /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 37402F8629CF7BAD00A18D1C /* Preview Content */; };
-		37402F8E29CF7C9200A18D1C /* StopWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37402F8D29CF7C9200A18D1C /* StopWatchViewController.swift */; };
-		37402F9029CF7FDF00A18D1C /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37402F8F29CF7FDF00A18D1C /* TimerViewController.swift */; };
-		37402F9229CF815300A18D1C /* WorldClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37402F9129CF815300A18D1C /* WorldClockViewController.swift */; };
 		37FE44FD29CFD558001BA6EF /* sebtesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FE44FC29CFD558001BA6EF /* sebtesting.swift */; };
 		8D77CF3929CFD00800D07F23 /* AlarmOtherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF3529CFD00800D07F23 /* AlarmOtherTableViewCell.swift */; };
-		8D77CF3A29CFD00800D07F23 /* AddAlarmTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF3629CFD00800D07F23 /* AddAlarmTableView.swift */; };
 		8D77CF3B29CFD00800D07F23 /* AlarmHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF3729CFD00800D07F23 /* AlarmHeaderView.swift */; };
 		8D77CF3C29CFD00800D07F23 /* WakeUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF3829CFD00800D07F23 /* WakeUpTableViewCell.swift */; };
-		8D77CF4329CFD02300D07F23 /* SoundsViewController.Swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF3D29CFD02300D07F23 /* SoundsViewController.Swift */; };
 		8D77CF4429CFD02300D07F23 /* RepeatAlarmViewController.Swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF3E29CFD02300D07F23 /* RepeatAlarmViewController.Swift */; };
 		8D77CF4529CFD02300D07F23 /* AlarmStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF3F29CFD02300D07F23 /* AlarmStore.swift */; };
-		8D77CF4629CFD02300D07F23 /* AlarmInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF4029CFD02300D07F23 /* AlarmInfo.swift */; };
 		8D77CF4729CFD02300D07F23 /* AlarmLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF4129CFD02300D07F23 /* AlarmLabelViewController.swift */; };
-		8D77CF4829CFD02300D07F23 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF4229CFD02300D07F23 /* AlarmViewController.swift */; };
 		8D77CF4B29CFD03B00D07F23 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF4929CFD03B00D07F23 /* Notification.swift */; };
-		8D77CF4C29CFD03B00D07F23 /* DateExtension.Swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77CF4A29CFD03B00D07F23 /* DateExtension.Swift */; };
 		8DC3B5BF29C649D400262C6D /* Alarmer_V2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3B5BE29C649D400262C6D /* Alarmer_V2App.swift */; };
 		8DC3B5C129C649D400262C6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3B5C029C649D400262C6D /* ContentView.swift */; };
 		8DC3B5C329C649D500262C6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DC3B5C229C649D500262C6D /* Assets.xcassets */; };
-		8DC3B5C729C649D500262C6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DC3B5C629C649D500262C6D /* Preview Assets.xcassets */; };
 		BBD91C1829C95555008977AB /* AddAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD91C1729C95555008977AB /* AddAlarmViewController.swift */; };
+		ED85142F29D0CDA100663BB2 /* AlarmerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED85142E29D0CDA100663BB2 /* AlarmerApp.swift */; };
+		ED85143129D0CDD700663BB2 /* MainTabberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED85143029D0CDD700663BB2 /* MainTabberView.swift */; };
 		EDF171BF29CCB3A800706978 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF171BE29CCB3A800706978 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,8 +49,9 @@
 		8DC3B5C029C649D400262C6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8DC3B5C229C649D500262C6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DC3B5C429C649D500262C6D /* Alarmer_V2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Alarmer_V2.entitlements; sourceTree = "<group>"; };
-		8DC3B5C629C649D500262C6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BBD91C1729C95555008977AB /* AddAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmViewController.swift; sourceTree = "<group>"; };
+		ED85142E29D0CDA100663BB2 /* AlarmerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmerApp.swift; sourceTree = "<group>"; };
+		ED85143029D0CDD700663BB2 /* MainTabberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabberView.swift; sourceTree = "<group>"; };
 		EDF171BE29CCB3A800706978 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,6 +143,8 @@
 				8DC3B5C229C649D500262C6D /* Assets.xcassets */,
 				8DC3B5C429C649D500262C6D /* Alarmer_V2.entitlements */,
 				37402F8629CF7BAD00A18D1C /* Preview Content */,
+				ED85142E29D0CDA100663BB2 /* AlarmerApp.swift */,
+				ED85143029D0CDD700663BB2 /* MainTabberView.swift */,
 			);
 			path = "Alarmer V2";
 			sourceTree = "<group>";
@@ -237,6 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED85142F29D0CDA100663BB2 /* AlarmerApp.swift in Sources */,
+				ED85143129D0CDD700663BB2 /* MainTabberView.swift in Sources */,
 				EDF171BF29CCB3A800706978 /* AppDelegate.swift in Sources */,
 				8DC3B5C129C649D400262C6D /* ContentView.swift in Sources */,
 				BBD91C1829C95555008977AB /* AddAlarmViewController.swift in Sources */,
